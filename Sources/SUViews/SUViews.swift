@@ -30,7 +30,7 @@ public struct RandomCircle:View{
         return max( geometry.size.width, geometry.size.height)
     }
 }
-struct AnimationBackView:View{
+public struct AnimationBackView:View{
     @State var offset:CGPoint = CGPoint(x: 0, y: 0)
     @State var staturation:Double = 0.4
 
@@ -38,7 +38,7 @@ struct AnimationBackView:View{
         Animation.linear(duration: 7.3)
             .repeatForever()
     }
-    var body: some View{
+    public var body: some View{
         VStack{
             GeometryReader(content: { geometry in
                 Group{
