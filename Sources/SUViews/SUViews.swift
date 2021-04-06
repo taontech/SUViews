@@ -34,6 +34,10 @@ public struct AnimationBackView:View{
     @State var offset:CGPoint = CGPoint(x: 0, y: 0)
     @State var staturation:Double = 0.4
 
+    public init(offset:CGPoint = CGPoint(x: 0, y: 0), staturation:Double = 0.5){
+        self.offset = offset
+        self.staturation = staturation
+    }
     var repeatingAnimation: Animation {
         Animation.linear(duration: 7.3)
             .repeatForever()
