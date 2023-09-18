@@ -69,7 +69,7 @@ public struct AnimationBackView:View{
 //            .cornerRadius(10)
 //            .shadow(radius:  )
         }
-        .background(Color(UIColor.secondarySystemBackground))
+        .background(.black)
 //            .cornerRadius(10)
 //        shadow(radius: 10 )
         
